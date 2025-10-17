@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>iPhone Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="maincontainer">
+<div class="container">
+  <form id="iphoneForm">
+    <!-- iPhone Models -->
+    <h3>Select iPhone Model</h3>
+    <label for="iphoneModel">Choose Model:</label>
+    <select id="iphoneModel" name="iphoneModel">
+      <option value="">-- Select an iPhone --</option>
+      <option value="16">iPhone 16 ($1199)</option>
+      <option value="15">iPhone 15 ($999)</option>
+      <option value="13">iPhone 13 ($799)</option>
+    </select>
+</div>
+<div class="phone-color">
+    <h3>Phone color</h3>
+    <label><input type="radio" name="color" value="0" checked> Black </label><br>
+    <label><input type="radio" name="color" value="0" > White </label><br>
+    <label><input type="radio" name="color" value="0" > Blue </label><br>
+</div>
+</div>
+<div class="container2">
+    <img src="media/iphones.webp" alt="iPhone Image" width="600">
+    <!-- Extras -->
+    <h3>Choose Extras</h3>
+    <label><input type="checkbox" class="addon" value="29"> Case ($29)</label><br>
+    <label><input type="checkbox" class="addon" value="19"> Screen Protector ($19)</label><br>
+    <label><input type="checkbox" class="addon" value="99"> AirPods ($99)</label><br>
+    <label><input type="checkbox" class="addon" value="149"> AppleCare+ ($149)</label><br>
+</div>
+<div class="container3">
+    <!-- Total -->
+    <h3 class="totaltitle">Total: $<span id="total">0.00</span></h3>
+
+    <!-- Buttons -->
+    <button type="submit" id="btnsubmit">Submit</button>
+    <button type="button" id="btnreset">Reset</button>
+
+</div>   
+
+    <!-- Validation message -->
+    <div id="message"></div>
+  </form>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

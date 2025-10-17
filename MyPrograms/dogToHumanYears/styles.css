@@ -1,0 +1,114 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+body {
+    /* background-color: rgb(7, 8, 9); */
+    background-image: url("./media/photoneon.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    min-height: 100vh; 
+
+}
+
+
+
+.theResult {
+    position: absolute;   
+    top: 150px;            
+    left: 50%;            
+    transform: translateX(-50%); 
+    border: 3px solid black;
+    border-radius: 80%;
+    padding: 5px;
+    background-color: rgb(167, 36, 152);
+    box-shadow: 20px 20px 8px rgba(47, 18, 191, 0.466);
+    color: rgb(13, 13, 193);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    transition: ease-in 2s;
+}
+
+.inputButton {
+    box-shadow: 20px 20px 8px rgba(47, 18, 191, 0.466);
+    border-radius: 5px;
+    border:20px solid rgba(112, 8, 112, 0.961);
+    padding: 35px 10px 10px 10px;
+    margin-right: 300px;
+    margin-left: 200px;
+    margin-top: 250px;
+    background-color: rgb(167, 36, 152);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100px
+}
+
+h1 {
+    max-width: 500px;
+    margin-left: 220px;
+    background-color: rgba(97, 93, 211, 0.6);
+    margin-right: 330px;
+    color: rgb(9, 10, 10);
+    border-radius: 10%;
+    margin-top: 60px;
+    box-shadow: 2px 3px 15px 15px rgba(199, 66, 175, 0.5);
+    animation: titleMove 4s alternate infinite;
+}
+.inputTitle {
+    font-weight: bold;
+    color: rgb(13, 13, 193);
+    font-size: larger;
+    background-color: rgba(15, 14, 14, 0.094);
+    border-radius: 9%;
+    
+
+}
+
+#dogAge {
+    margin-top: 9px;
+    color: rgba(8, 8, 222, 0.934);
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 2%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* added button hover/transition effect */
+button {
+    color:rgba(232, 232, 239, 0.976);
+    background-color: rgb(16, 105, 201);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 8%;
+}
+button:hover {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(235, 235, 243);
+    color: blue;
+    transition: 1s;
+}
+/* animation for title */
+   @keyframes  titleMove {
+       0% {
+           transform: rotate(180deg)
+       }
+       25% {
+           transform: translate(-70%, -70%);
+       }
+       25% {
+           transform: rotate(180deg)
+       }
+       25% {
+           transform: translate(-70%, -70%);
+       }
+
+       100% {
+           transform: translate(70%, 20%);
+       }
+   };
