@@ -4,12 +4,12 @@
 
 // Array of image paths
 const images = [
-    'media/hanna1.png',
-    'media/hanna2.png',
-    'media/hanna3.png',
-    'media/hanna4.png',
-    'media/hanna5.png',
-    'media/hanna6.png',
+    'media/.png',
+    'media/.png',
+    'media/.png',
+    'media/.png',
+    'media/.png',
+    'media/.png',
 ];
 
 let currentImageIndex = 0;
