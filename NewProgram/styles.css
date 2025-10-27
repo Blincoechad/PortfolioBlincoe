@@ -8,7 +8,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+  background: linear-gradient(135deg, #290a7f 0%, #4856e9 100%);
   color: #333;
   transition: all 0.3s ease;
 }
@@ -29,7 +29,8 @@ body {
 /* --- Heading --- */
 h1 {
   font-size: 2rem;
-  color: #1b3a57;
+  box-shadow: -8px 15px 20px rgba(240, 234, 234,0.2);
+  color: #cdcad2;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   margin-bottom: 1.5rem;
 }
@@ -100,7 +101,7 @@ button:disabled {
 #weatherResult {
   margin-top: 1.5rem;
   font-size: 1.1rem;
-  background: rgba(255,255,255,0.9);
+  background: rgba(85, 105, 213, 0.9);
   padding: 1.5rem;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
@@ -136,3 +137,4 @@ button:disabled {
     font-size: 0.95rem;
   }
 }
+
