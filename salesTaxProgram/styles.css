@@ -157,3 +157,9 @@ h2, p {
   color: rgb(233, 19, 7);
   text-shadow: 0 10 18px rgba(255, 0, 0, 0.8);
 }
+
+@media screen and (mind-width: 1024px){
+    .error-text {
+        font-size: 45px;
+    }
+}
