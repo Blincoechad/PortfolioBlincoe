@@ -1,6 +1,6 @@
 .camera {
-  width: 50%;
-  height: 50%;
-  object-fit: cover;
+  width: 50vh;
+  height: 50vh;
+  object-fit: contain;
   border-radius: 20px;
 }
