@@ -121,6 +121,9 @@ button:disabled {
   margin-left: 0.5rem;
 }
 #theDate {
+  position: relative;
+  bottom: 320px;
+  left: 220px ;
   color: white;
 }
 
