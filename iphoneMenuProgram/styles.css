@@ -1,0 +1,245 @@
+body {
+  background-color: rgb(67, 65, 65);
+  font-family: Arial, sans-serif;
+  color: white;
+}
+#message {
+    display: flex;
+    justify-content: center; /* center text horizontally */
+    align-items: center;     /* center text vertically if box is tall */
+    margin: 30px;
+    padding: 20px 40px;
+    border: 3px solid black;
+    border-radius: 12px;      /* optional: rounded corners */
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(61, 46, 121, 0.8);            
+    /* text color is coming from JS code */
+    text-align: center;
+    line-height: 1.4;         /* controls spacing if message wraps */
+}
+
+
+
+.container, .container2, .container3, .phone-color {
+  background-color: #2b2660;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 3px solid rgb(219, 213, 213);
+  border-radius: 20px;
+  box-shadow: 5px 17px 45px rgb(13, 11, 16);
+}
+
+h3 {
+  color: rgb(219, 218, 230);
+  text-decoration: underline;
+}
+
+/* Buttons */
+#btnsubmit, #btnreset {
+  background-color: #2c3e99;
+  border: 2px solid #5a5aff;
+  color: #fff;
+  padding: 15px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 5px #5a5aff, 0 0 10px #5a5aff;
+  transition: all 0.3s ease;
+  margin: 0 5px 15px 5px;
+}
+
+#btnsubmit:hover, #btnreset:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #5a5aff, 0 0 30px #5a5aff, 0 0 50px #5a5aff;
+}
+
+#btnsubmit:active, #btnreset:active {
+  transform: translateY(2px) scale(0.9);
+  box-shadow: 0 0 5px #5a5aff, 0 0 10px #5a5aff;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  cursor: pointer;
+}
+
+.dropdown-selected {
+  background-color: #2e2e2e;
+  padding: 10px 15px;
+  border: 2px solid #5a5aff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+}
+
+.dropdown-selected:hover {
+  background-color: #3a3a3a;
+  border-color: #7a7aff;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #2e2e2e;
+  border: 2px solid #5a5aff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  display: none;
+  z-index: 10;
+}
+
+.dropdown.open .dropdown-list {
+  display: block;
+}
+
+.dropdown-list li {
+  padding: 10px 15px;
+  transition: all 0.2s ease;
+}
+
+.dropdown-list li:hover {
+  background-color: #3a3a3a;
+  box-shadow: 0 0 10px #5a5aff;
+}
+/* --- FUTURISTIC BUBBLE STYLE FOR RADIO BUTTONS ONLY --- */
+
+/* Hide native radio input */
+.phone-color input[type="radio"] {
+  display: none;
+}
+
+/* Bubble container (span.bubble) */
+.phone-color .bubble {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #3b2e60, #2b1f50); /* dark purple gradient */
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.4), -5px -5px 15px rgba(255,255,255,0.1);
+  display: inline-block;
+  position: relative;
+  margin-right: 12px;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Bubble hover pop */
+.phone-color label:hover .bubble {
+  transform: scale(1.15) translateY(-2px);
+  box-shadow: 6px 6px 18px rgba(0,0,0,0.5), -6px -6px 18px rgba(255,255,255,0.15);
+}
+
+/* Inner dot when radio is checked */
+.phone-color input[type="radio"]:checked + .bubble::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #2c0781; /* deep blue inner glow */
+  box-shadow: inset 2px 2px 5px #5a5aff, inset -2px -2px 5px #a0a0ff;
+}
+
+/* Label text styling */
+.phone-color label {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+  gap: 8px;
+  color: #f0f0f0; /* light text */
+  transition: color 0.3s ease;
+}
+
+/* Optional: subtle glow when label hovered */
+.phone-color label:hover {
+  color: #a0a0ff;
+}
+/* Hide native checkboxes */
+.container2 input[type="checkbox"] {
+  display: none;
+}
+
+/* Bubble base styling (already matches radio bubbles) */
+.container2 .bubble {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #3b2e60, #2b1f50);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.4), -5px -5px 15px rgba(255,255,255,0.1);
+  position: relative;
+  margin-right: 10px;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+  
+}
+
+/* Hover effect: bubbles pop slightly */
+.container2 label:hover .bubble {
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 6px 6px 18px rgba(0,0,0,0.5), -6px -6px 18px rgba(255,255,255,0.15);
+}
+
+/* Check mark for checked checkbox */
+/* Add padding around each label */
+.container2 input[type="checkbox"]:checked + .bubble::after {
+  content: "✓";               /* Unicode checkmark character */
+  color: #00ff00;             /* bright green */
+  font-size: 18px;            /* adjust to fit your bubble */
+  font-weight: bold;          /* makes it more visible */
+  position: absolute;         /* position it inside the bubble */
+  top: 50%;                   /* center vertically */
+  left: 50%;                  /* center horizontally */
+  transform: translate(-50%, -50%); /* perfectly center it */
+}
+.container2 label {
+  display: flex;
+  align-items: center;
+  gap: 12px;          /* space between bubble and text */
+  margin-bottom: 15px; /* space below each checkbox */
+  padding: 5px;       /* optional: adds padding around the label */
+}
+
+
+
+/* Optional hover effect on the label itself */
+.phone-color label:hover,
+.container2 label:hover {
+  background: rgba(255, 255, 255, 0.05); /* subtle glow on hover */
+}
+
+
+/* Click animation */
+@keyframes pop {
+  0% { transform: scale(0.8); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+.container2 input[type="checkbox"]:checked + .bubble {
+  animation: pop 0.2s ease forwards;
+}
+.totalTitle {
+  position: relative;
+  left: 380px;
+  top: 30px;
+  font-size: 30px;
+}
+
+

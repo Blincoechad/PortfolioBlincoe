@@ -1,0 +1,54 @@
+ 
+body {
+      background: #111;
+      color: #0f0;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #clock {
+      font-size: 4em;
+      letter-spacing: 0.1em;
+      
+    }
+    .clock-container {
+        border: 2px solid rgb(5, 4, 4);
+        padding: 60px;
+        border-radius: 20px;
+        background-color: rgb(165, 50, 50);
+        color: rgb(9, 9, 185);
+        font-size: 50px;
+        font-family: Georgia, 'Times New Roman', Times, serif;  
+        display: inline-block;
+        animation: bounceArc 3s ease-in-out infinite;
+}
+
+@keyframes bounceArc {
+  0%   { transform: translateX(0) translateY(0); }
+  25%  { transform: translateX(80px) translateY(-80px); }
+  50%  { transform: translateX(40) translateY(40); }
+  75%  { transform: translateX(-80px) translateY(-80px); }
+  100% { transform: translateX(0) translateY(0); }
+}
+.button {
+    position: relative;
+    top: -250px;
+    left: 6%;
+  }
+.textarea {
+    position: relative;
+    top: -400px;
+}
+.bikeSpecs {
+    color: white;
+}
+#bikeSpecs {
+    position: relative;
+    top: -250px;
+    left: 6%;
+  }
+
+   
+  

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sales tax Program</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <header>
+        <h1 class="title" 3>Sales Tax Calculator</h1>
+    </header>
+    <body>
+        <div class="inputContainer">
+            <label>Enter Amount:
+                <input type="text" id="amount"
+                    placeholder="Amount Without $ Sign..." />
+
+            </label>
+            <button id="calculate" onclick="calculateTax()">Calculate
+                Tax</button>
+        </div>
+        <div class="outputContainer">
+            <p class="output" id="output">
+
+            </p>
+        </div>
+        <div>
+            <h2> Program Description:</h2>
+            <p class="description">
+                This is a program that calculates the sales tax for a given
+                amount.
+                The user inputs an amount, and upon clicking the "Calculate Tax"
+                button, the program computes the sales tax based on a predefined
+                tax rate and displays the result.
+                There is some basic error handling to ensure that the input is a
+                valid number.
+                There is also some basic styling to enhance the user interface.
+            </p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

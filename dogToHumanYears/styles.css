@@ -1,0 +1,129 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+body {
+    /* background-color: rgb(7, 8, 9); */
+    background-image: url("./media/white-tan.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    min-height: 100vh; 
+
+}
+#dogs {
+    position: relative;
+    right: -230px;
+    bottom: 299px;
+    z-index: -1;
+    
+    
+}
+
+
+
+.theResult {
+    position: absolute;   
+    top: 150px;            
+    left: 50%;            
+    transform: translateX(-50%); 
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(224, 198, 140);
+    box-shadow: 0px 20px 30px rgba(114, 110, 135, 0.466);
+    color: rgb(47, 47, 32);
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    transition: ease-in 2s;
+}
+
+.inputButton {
+    box-shadow: 0px 30px 20px rgba(114, 110, 135, 0.466);
+    border-radius: 5px;
+    border: 11px solid rgba(78, 76, 71, 0.961);
+    padding: 35px 10px 10px 10px;
+    margin-right: 300px;
+    margin-left: 200px;
+    margin-top: 250px;
+    background-color: rgb(187, 151, 42);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100px;
+    opacity: 90%;
+}
+img {
+    opacity: 70%;;
+}
+
+h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgb(70, 64, 30);
+    max-width: 500px;
+    margin-left: 220px;
+    background-color: rgba(241, 237, 230, 0);
+    margin-right: 330px;
+    border-radius: 10%;
+    margin-top: 60px;
+    box-shadow: 2px 3px 15px 15px rgba(207, 145, 12, 0.17);
+    animation: titleMove 4s alternate infinite;
+}
+.inputTitle {
+    font-weight: bold;
+    color: rgb(9, 9, 10);
+    font-size: larger;
+    background-color: rgba(160, 133, 26, 0.882);
+    border-radius: 9%;
+    
+
+}
+
+#dogAge {
+    margin-top: 9px;
+    color: rgba(4, 4, 5, 0.934);
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 2%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* added button hover/transition effect */
+button {
+    color:rgba(232, 232, 239, 0.976);
+    background-color: rgb(108, 103, 9);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 8%;
+}
+button:hover {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(235, 235, 243);
+    color: blue;
+    transition: 1s;
+}
+/* animation for title */
+   @keyframes  titleMove {
+       0% {
+           transform: rotate(180deg)
+       }
+       25% {
+           transform: translate(-70%, -70%);
+       }
+       25% {
+           transform: rotate(180deg)
+       }
+       25% {
+           transform: translate(-70%, -70%);
+       }
+
+       100% {
+           transform: translate(70%, 20%);
+       }
+   };

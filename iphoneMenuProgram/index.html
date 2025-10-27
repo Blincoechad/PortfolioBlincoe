@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>iPhone Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="maincontainer">
+  <form id="iphoneForm">
+    <!-- iPhone Models -->
+    <div class="container">
+      <h3>Select iPhone Model</h3>
+      <div id="iphoneDropdown" class="dropdown">
+        <div class="dropdown-selected">-- Select an iPhone --</div>
+        <ul class="dropdown-list">
+          <li data-value="16">iPhone 16 ($1199)</li>
+          <li data-value="15">iPhone 15 ($999)</li>
+          <li data-value="13">iPhone 13 ($799)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Phone Color -->
+    <div class="phone-color">
+      <h3>Phone color:</h3>
+      <label>
+        <input type="radio" name="color" value="black" checked>
+        <span class="bubble"></span> Black
+      </label>
+      <label>
+        <input type="radio" name="color" value="white">
+        <span class="bubble"></span> White
+      </label>
+      <label>
+        <input type="radio" name="color" value="blue">
+        <span class="bubble"></span> Blue
+      </label>
+    </div>
+
+    <!-- Extras -->
+    <div class="container2">
+      <img src="media/iphones2.png" alt="iPhone Image" width="600">
+      <h3>Choose Extras:</h3>
+      <label><input type="checkbox" class="addon" value="29"><span class="bubble"></span> Case ($29)</label>
+      <label><input type="checkbox" class="addon" value="19"><span class="bubble"></span> Screen Protector ($19)</label>
+      <label><input type="checkbox" class="addon" value="99"><span class="bubble"></span> AirPods ($99)</label>
+      <label><input type="checkbox" class="addon" value="149"><span class="bubble"></span> AppleCare+ ($149)</label>
+    </div>
+
+    <!-- Total and buttons -->
+    <div class="container3">
+      <h3 class="totalTitle">Total: $<span id="total">0.00</span></h3>
+      <button type="submit" id="btnsubmit">Submit</button>
+      <button type="button" id="btnreset">Reset</button>
+    </div>
+
+    <!-- Validation message -->
+    <div id="message"></div>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
