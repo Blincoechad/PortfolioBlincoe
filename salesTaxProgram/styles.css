@@ -151,3 +151,9 @@ h2, p {
     text-decoration: underline;
     font-size: 30px;
 }
+.error-text {
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  color: rgb(233, 19, 7);
+  text-shadow: 0 10 18px rgba(255, 0, 0, 0.8);
+}
