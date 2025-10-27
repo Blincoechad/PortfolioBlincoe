@@ -120,6 +120,9 @@ button:disabled {
   height: 60px;
   margin-left: 0.5rem;
 }
+#theDate {
+  color: white;
+}
 
 /* --- Responsive --- */
 @media (max-width: 500px) {

@@ -72,4 +72,6 @@
           result.textContent = 'Error fetching weather data.';
         });
     });
+    const date = new Date();
+    document.getElementById('theDate').innerHTML = date.toDateString();
   
