@@ -124,6 +124,7 @@ button:disabled {
   position: relative;
   bottom: 320px;
   left: 220px ;
+  margin: 10px;
   color: rgb(99, 203, 232);
   font-size: 1.2rem;
   font-weight: bold;
