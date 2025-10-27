@@ -124,7 +124,11 @@ button:disabled {
   position: relative;
   bottom: 320px;
   left: 220px ;
-  color: white;
+  color: rgb(99, 203, 232);
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 2px;
 }
 
 /* --- Responsive --- */
