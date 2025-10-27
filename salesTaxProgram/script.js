@@ -5,7 +5,8 @@ function calculateTax() {
     const totalPrice = price + taxedPrice;
     // the toFixed() method takes off 
     // anything after 2 decimal places
-    document.getElementById('output').innerHTML = `The total after tax is ${totalPrice.toFixed(2)}`;
+    
+    document.getElementById('output').innerHTML = `The total after tax is <span class="output-total">${totalPrice.toFixed(2)} </span>`;
     // creates a validation for non-numeric characters - i could turn type
     //  property to number
     //  but this is a more extended version to practice JS

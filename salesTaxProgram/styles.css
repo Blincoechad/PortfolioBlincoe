@@ -146,3 +146,8 @@ h2, p {
     letter-spacing: 2px;
     border: 12px solid rgb(12, 11, 11);
 }
+.output-total {
+    color: rgb(232, 91, 187);
+    text-decoration: underline;
+    font-size: 30px;
+}
