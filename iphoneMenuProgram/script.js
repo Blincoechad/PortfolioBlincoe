@@ -1,17 +1,17 @@
 window.addEventListener('load', function () {
-  var iphoneForm = document.getElementById("iphoneForm");
-  var addons = document.getElementsByClassName("addon");
-  var totalOutput = document.getElementById("total");
-  var resetButton = document.getElementById("btnreset");
-  var message = document.getElementById("message");
+  let iphoneForm = document.getElementById("iphoneForm");
+  let addons = document.getElementsByClassName("addon");
+  let totalOutput = document.getElementById("total");
+  let resetButton = document.getElementById("btnreset");
+  let message = document.getElementById("message");
 
   // Dropdown
-  var dropdown = document.getElementById("iphoneDropdown");
-  var selected = dropdown.querySelector(".dropdown-selected");
-  var listItems = dropdown.querySelectorAll("li");
-  var iphoneModelValue = "";
+  let dropdown = document.getElementById("iphoneDropdown");
+  let selected = dropdown.querySelector(".dropdown-selected");
+  let listItems = dropdown.querySelectorAll("li");
+  let iphoneModelValue = "";
 
-  var iphoneModelCost = { "16": 1199, "15": 999, "13": 799 };
+  let iphoneModelCost = { "16": 1199, "15": 999, "13": 799 };
 
   // Toggle dropdown
   selected.addEventListener("click", function () {
@@ -30,7 +30,7 @@ window.addEventListener('load', function () {
 
   // Calculate total
   function calculateTotal() {
-    var total = 0;
+    let total = 0;
     if (iphoneModelValue) total += iphoneModelCost[iphoneModelValue];
 
     for (var i = 0; i < addons.length; i++) {
@@ -41,7 +41,7 @@ window.addEventListener('load', function () {
   }
 
   // Extras changes
-  for (var i = 0; i < addons.length; i++) {
+  for (let i = 0; i < addons.length; i++) {
     addons[i].addEventListener('change', calculateTotal);
   }
 
