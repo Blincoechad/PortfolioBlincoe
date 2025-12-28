@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #9e9797;
+}
+h1 {
+    font-size: 50px;
+    color: #131b23;
+    text-shadow: 2px 2px 14px #08649e;
+    text-decoration: underline;
+    letter-spacing: .2rem;
+}
+.motivateButton, .motivateButton2, .resetList {
+    height: 50px;
+    width: 150px;
+    font-size: 16px;
+    background-color: #4c9daf;
+    cursor: pointer;
+    border: 3px dotted black;
+}
+#motivationDisplay {
+    position: relative;
+    top: 80px;
+    margin: 20px;
+    font-size: 80px;
+    font-weight: bold;
+    color: #333;
+}
+#newMotivation {
+    position: relative;
+    top: 70px;
+    right: 70px;
+    height: 40px;
+    width: 300px;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 5px;
+    border: 7px solid #0a4981;
+    border-radius: 5px;
+}
+.resetList {
+    position: relative;
+    right: 190px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+    .resetList:hover {
+    background-color: #7b0404;
+    border: 5px solid black;
+    color: white;
+}
+.motivateButton2 {
+    position: relative;
+    left: 85px;
+    font-size: 24px;
+    font-weight: bold;
+}
+ .motivateButton2:hover {
+    background-color: #0611a6;
+    border: 3px solid black;
+    color: white;
+ }
+.motivateButton {
+    position: relative;
+    top: 70px;
+    left: 60px;
+    font-size: 20px;
+    font-weight: bold;
+}
+    .motivateButton:hover {
+    background-color: #0611a6;
+    border: 3px solid black;
+    color: white;
+ }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Motorcycle Gallery</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="title">
+            <p class="title-text">
+                Pick your Favorite Bike
+            </p>
+
+        </div>
+          <div class="header">
+            <p id="subTitle">
+              Click on Picture to Get Bikes Name and Motor Size!
+            </p>
+        </div>
+        <div class="image-container">
+            <div class="image"><img src="media/ninjazx6r.jpg"
+                    alt="ninja ZX6R"></div>
+            <div class="image"><img src="media/gixxer750.jpg"
+                    alt="GXR 750"></div>
+            <div class="image"><img src="media/gixxer600.jpg"
+                    alt="GXR 600"></div>
+            <div class="image"><img src="media/cbr600.jpg" alt="CBR 600"></div>
+        </div>
+
+        <!-- enlarge image with a x to exit-->
+        <div class="fullimg" aria-hidden="true">
+            <span class="close" role="button" aria-label="Close full image">&times;</span>
+            <img src="" alt="Full size image">
+            <p class="caption" aria-live="polite"></p>
+        </div>
+      
+
+        <script src="script.js"></script>
+    </body>
+</html>

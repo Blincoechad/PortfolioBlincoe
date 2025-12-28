@@ -43,3 +43,6 @@ for (let i = 0; i < numRects; i++) {
     ctx.fillStyle = `rgba(${r}, ${g}, ${b}, ${opacity})`;
     ctx.fillRect(i * rectWidth, 0, rectWidth, rectHeight);
 }
+// current time and date
+const date = new Date();
+    document.getElementById('time').textContent = date.toLocaleString();

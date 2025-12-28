@@ -8,37 +8,46 @@
     </head>
     <body>
         <h1>Rock, Paper, Scissors</h1>
-        <h4>- Choose your Selection To Begin -</h4>
-        <div>
-            <img class="paper3" src="media/paper.png" height="100px"
-                width="100px" alt="Paper">
-            <img class="rock1" src="media/rock.png" height="100px" width="100px"
-                alt="rocks">
-            <img class="scissors3" src="media/scissors.png" height="100px"
-                width="100px" alt="scissors">
-
-            <div id="choices">
-                <button class="button1" data-choice="rock">Rock</button>
-                <button class="button2" data-choice="paper">Paper</button>
-                <button class="button3" data-choice="scissors">Scissors</button>
-            </div>
-            <div class="result-container">
-                <p class="results" id="result"></p>
-            </div>
-            <div>
-                <img class="paper1" src="media/paper.png" height="100px"
+        <h2>- Choose your Selection To Begin -</h2>
+        <main>
+            <div class="content">
+                <img class="paper3" src="media/paper.png" height="100px"
                     width="100px" alt="Paper">
-                <img class="rock2" src="media/rock.png" height="100px"
-                    width="100px" alt="rocks">
-                <img class="scissors2" src="media/scissors.png" height="100px"
+                <img class="rock1" src="media/rock.png" height="100px"
+                    width="100px"
+                    alt="rocks">
+                <img class="scissors3" src="media/scissors.png" height="100px"
                     width="100px" alt="scissors">
 
-            </div>
+                <div id="choices">
+                    <button class="button1" data-choice="rock">Rock</button>
+                    <button class="button2" data-choice="paper">Paper</button>
+                    <button class="button3"
+                        data-choice="scissors">Scissors</button>
+                </div>
+                <div class="result-container">
+                    <p class="results" id="result"><span
+                            class="lets">Let's</span>
+                        <span class="play">Play!</span><span
+                            class="dots">...</span></p>
+                </div>
+                <div>
+                    <img class="paper1" src="media/paper.png" height="100px"
+                        width="100px" alt="Paper">
+                    <img class="rock2" src="media/rock.png" height="100px"
+                        width="100px" alt="rocks">
+                    <img class="scissors2" src="media/scissors.png"
+                        height="100px"
+                        width="100px" alt="scissors">
+
+                </div>
+            </main>
 
             <div class="resetButton">
                 <button class="reset-button" id="reset"
                     onclick="resetGame()">Reset</button>
-                <h4 class="reset-description">- Click Reset When Finished -</h4>
+                <h4 id="reset-description" class="reset-description">- Click
+                    Reset To Start Over-</h4>
             </div>
             <img class="paper2" src="media/paper.png" height="100px"
                 width="100px" alt="Paper">
@@ -47,7 +56,14 @@
             <img class="scissors1" src="media/scissors.png" height="100px"
                 width="100px" alt="scissors">
 
-        </div>
-        <script src="script.js"></script>
-    </body>
-</html>
+            <div>
+                <img class="logo" src="media/logo.png" height="350px"
+                    width="250px"
+                    alt="logo">
+            </div>
+            <footer>&copy; 2025 PixelDesigns
+
+            </footer>
+            <script src="script.js"></script>
+        </body>
+    </html>
