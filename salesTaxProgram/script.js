@@ -20,4 +20,9 @@ function calculateTax() {
         document.getElementById('amount').value = "";
     
     }
+    document.addEventListner('keydown' function(e) {
+                  if(e.key === 'enter') {
+            calculateTax();
+    }
+      })
 };
