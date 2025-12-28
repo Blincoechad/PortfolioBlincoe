@@ -1,5 +1,5 @@
 html {
-    font-family: 'Roboto';
+    font-family: 'Roboto' !important;
     background-color: rgb(94, 97, 180);
     margin: 0;
     padding: 0;
