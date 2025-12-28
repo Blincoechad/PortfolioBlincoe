@@ -64,14 +64,14 @@ h2 {
     background-color: rgba(81, 76, 170, 0.559);
     opacity: 70%;
     box-sizing: border-box;
-    overflow-wrap: break-word;
+    overflow-wrap: wrap;
     word-wrap: break-word;
     word-break: break-word;
 }
 .outputContainer p {
     font-size: 35px;
     color: rgb(252, 251, 251);
-    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Times New Roman', serif;
     letter-spacing: 4px;
     font-family: fantasy;
     animation: textGlow 1s infinite alternate;
