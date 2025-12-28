@@ -71,7 +71,7 @@ h2 {
 .outputContainer p {
     font-size: 35px;
     color: rgb(252, 251, 251);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
     letter-spacing: 4px;
     font-family: fantasy;
     animation: textGlow 1s infinite alternate;
