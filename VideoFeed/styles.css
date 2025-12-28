@@ -5,3 +5,28 @@
   object-fit: contain;
   border-radius: 20px;
 }
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  margin-top: 50px;
+}
+
+video {
+  border: 32px solid #180d58;
+  border-radius: 10px;
+  height: 800px;
+  width: 900px;
+  object-fit: fill;
+  box-shadow: 2px 22px 42px black;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
