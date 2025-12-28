@@ -71,7 +71,7 @@ h2 {
 .outputContainer p {
     font-size: 35px;
     color: rgb(252, 251, 251);
-    font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+    font-family: Georgia, Times, 'Times New Roman', serif;
     letter-spacing: 4px;
     font-family: fantasy;
     animation: textGlow 1s infinite alternate;
@@ -79,6 +79,9 @@ h2 {
     padding: 0;
     max-width: 100%;
     text-align: center;
+}
+.output {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
     /*  created an animation that makes the out 
 text glow */
