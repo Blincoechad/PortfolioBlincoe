@@ -8,13 +8,26 @@
     </head>
     <body>
         <h1>Motivational Array</h1>
-        <p>
-            <button class="motivateButton" id="motivateButton">Get
-                Motivated!</button>
-            <button class="motivateButton2" id="addToList">Add to List</button>
-            <input type="text" id="newMotivation" placeholder="New Motivation">
-            <button class="resetList" id="resetList">•Reset List</button>
-        </p>
+        <div class="button-box">
+            <button class="button1" id="addToList">
+                Add to List
+            </button>
+
+            <button class="button2" id="resetList">
+                Reset List
+            </button>
+        </div>
+        <div class="inputSection">
+            <input type="text" class="newMotivation" id="newMotivation"
+                placeholder="New Motivation">
+        </div>
+        <div>
+            <button class="button3" id="motivateButton">Get
+                Motivated!
+            </button>
+            <p> Continue to Click for More!</p>
+        </div>
+
         <p id="motivationDisplay"></p>
 
         <script src="randomResponse.js"></script>
