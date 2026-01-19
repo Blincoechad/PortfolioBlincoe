@@ -1,351 +1,356 @@
 /* fixed logo so it shows on lanescape mode */
 
 body {
-    background-color: #146491;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: #146491;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
- 
-
 
 h1 {
-    text-align: center;
-    text-decoration: underline;
-    font-size: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-bottom: 40px;
-    z-index: 2;
-    color: rgb(19, 11, 128);
-    background-color: rgba(50, 44, 44, 0.245);
-    padding: 20px;
-    border-radius: 19px;
-    
+  text-align: center;
+  text-decoration: underline;
+  font-size: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 40px;
+  z-index: 2;
+  color: rgb(19, 11, 128);
+  background-color: rgba(50, 44, 44, 0.245);
+  padding: 20px;
+  border-radius: 19px;
 }
 h2 {
-    position: relative;
-    margin-bottom: -60px;
-    padding-bottom: -20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  margin-bottom: -60px;
+  padding-bottom: -20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-.reset-description {
-    position: relative;
-    margin: 15px;
-    left: 5px;
+.description {
+  position: relative;
+  margin: 15px;
+  left: 5px;
 }
-
 
 #choices {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 40px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 .lets {
-    position: relative;
-    right: 70px;
-    color: hwb(200 97% 2%);
-    font-size: 30px;
-    transform: scale(1.2);
+  position: relative;
+  right: 70px;
+  color: hwb(200 97% 2%);
+  font-size: 30px;
+  transform: scale(1.2);
 }
 @keyframes scale {
-    0% { transform: scale(1.2); }
-    20% { transform: scale(3.2); }
+  0% {
+    transform: scale(1.2);
+  }
+  20% {
+    transform: scale(3.2);
+  }
 }
 .play {
-    display: inline-block;
-    position: relative;
-    top: 20px;
-    bottom: 20px;
-    color: rgb(62, 62, 224);
-    font-size: 60px;
-    animation: spinScale 7s linear infinite;
-
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  bottom: 20px;
+  color: rgb(62, 62, 224);
+  font-size: 60px;
+  animation: spinScale 7s linear infinite;
 }
 @keyframes spinScale {
-  0%   { transform: rotate(-20deg) scale(1); }
-  20%  { transform: rotate(360deg) scale(2); }
-  100% { transform: rotate(360deg) scale(1); }
+  0% {
+    transform: rotate(-20deg) scale(1);
+  }
+  20% {
+    transform: rotate(360deg) scale(2);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
 }
 .dots {
-    position: relative;
-    top: 20px;
-    left: 50px;
-    color: hwb(204 89% 9%);
-    font-size: 70px;
-    transform: scale(1.2);
+  position: relative;
+  top: 20px;
+  left: 50px;
+  color: hwb(204 89% 9%);
+  font-size: 70px;
+  transform: scale(1.2);
 }
 
 /* buttons to make choice */
 /* Rock */
 .button1 {
-    padding: 10px 70px;
-    font-size: 30px;
-    font-weight: bold;
-    background-color: rgb(40, 40, 120);
-    border: 4px solid black;
-    border-bottom-right-radius: 18px;
-    z-index: 2;
-    transition: all 0.3s ease;
+  padding: 10px 70px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: rgb(40, 40, 120);
+  border: 4px solid black;
+  border-bottom-right-radius: 18px;
+  z-index: 2;
+  transition: all 0.3s ease;
 }
- .button1:hover {
-    background-color: black;
-    color:#367092;
-    font-weight: bold;
-    font-size: larger;
-    
- }
- /*  paper  */
+.button1:hover {
+  background-color: black;
+  color: #367092;
+  font-weight: bold;
+  font-size: larger;
+}
+/*  paper  */
 .button2 {
-    padding: 10px 70px;
-    font-weight: bold;
-    font-size: 30px;
-    background-color: rgb(40, 40, 120);
-    border: 4px solid black;
-    border-bottom-right-radius: 18px;
-    z-index: 2;
-    transition: all 0.3s ease;
+  padding: 10px 70px;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: rgb(40, 40, 120);
+  border: 4px solid black;
+  border-bottom-right-radius: 18px;
+  z-index: 2;
+  transition: all 0.3s ease;
 }
- .button2:hover {
-    background-color: black;
-    color:#367092;
-    font-weight: bold;
-    font-size: larger;
-    
- }
- /* Scissors */
+.button2:hover {
+  background-color: black;
+  color: #367092;
+  font-weight: bold;
+  font-size: larger;
+}
+/* Scissors */
 .button3 {
-    padding: 10px 70px;
-    font-weight: bold;
-    font-size: 30px;
-    background-color: rgb(40, 40, 120);
-    border: 4px solid black;
-    border-bottom-right-radius: 18px;
-    z-index: 2;
-    transition: all 0.3s ease;
+  padding: 10px 70px;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: rgb(40, 40, 120);
+  border: 4px solid black;
+  border-bottom-right-radius: 18px;
+  z-index: 2;
+  transition: all 0.3s ease;
 }
- .button3:hover {
-    background-color: black;
-    color:#367092;
-    font-weight: bold;
-    font-size: larger;
-    
- }
-  
- .resetButton {
-    margin-top: 10px;
-    text-align: center;
-    z-index: 2; 
-    
- }
- /* reset button */
- .reset-button {
-    font-size: 30px;
-    font-weight: bold;
-    padding: 10px 80px;
-    background-color: rgb(66, 66, 207);
-    border: 4px solid black;
-    transition: all .1s ease;
-    
- }
-   .reset-button:hover {
-    background-color: rgb(51, 19, 154);
-    color:#367092;
-    font-weight: bold;
-    font-size: 45px;
-    border: 4px solid rgb(4, 4, 5);
-   }
+.button3:hover {
+  background-color: black;
+  color: #367092;
+  font-weight: bold;
+  font-size: larger;
+}
 
-   /* the output of the winner */
+.resetButton {
+  margin-top: 10px;
+  text-align: center;
+  z-index: 2;
+}
+/* reset button */
+.reset-button {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px 80px;
+  background-color: rgb(66, 66, 207);
+  border: 4px solid black;
+  transition: all 0.1s ease;
+}
+.reset-button:hover {
+  background-color: rgb(51, 19, 154);
+  color: #367092;
+  font-weight: bold;
+  font-size: 45px;
+  border: 4px solid rgb(4, 4, 5);
+}
+
+/* the output of the winner */
 .results {
-    position: relative;
-    text-align: center;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: 3px;
-    margin: 0;
-    padding: 20px;
-    color: rgb(235, 239, 237);
-    font-size: 25px;
+  position: relative;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 20px;
+  color: rgb(235, 239, 237);
+  font-size: 25px;
 }
 .result-container {
-    background-color: rgb(23, 6, 90);
-    height: 170px;
-    width: 330px;
-    margin: 0 auto;
-    opacity: 80%;
-    border: 14px solid black;
-    border-radius: 10px;
-    box-shadow: 0px 13px 10px rgba(1, 1, 3, 0.5);
-    animation: bounce 3.3s linear infinite;
+  background-color: rgb(23, 6, 90);
+  height: 170px;
+  width: 330px;
+  margin: 0 auto;
+  opacity: 80%;
+  border: 14px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 13px 10px rgba(1, 1, 3, 0.5);
+  animation: bounce 3.3s linear infinite;
 }
 @keyframes bounce {
-    0% { transform: translateY(10px); }
-    60% { transform: translateY(40px); }
-    100% { transform: translateY(10px); }
+  0% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
 }
-
 
 #result {
-    white-space: pre-line;
+  white-space: pre-line;
 }
-
 
 /* Mobile Styles */
 @media screen and (max-width: 670px) {
-    
-    h1 {
-        font-size: 36px;
-        margin-bottom: 30px;
-    }
+  h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
 
-    #choices {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        margin-bottom: 30px;
-    }
+  #choices {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
 
-    .button1, .button2, .button3 {
-        width: 200px;
-        padding: 15px 0;
-    }
+  .button1,
+  .button2,
+  .button3 {
+    width: 200px;
+    padding: 15px 0;
+  }
 
-    .result-container {
-        width: 280px;
-        height: 150px;
-        margin: 20px auto;
-    }
+  .result-container {
+    width: 280px;
+    height: 150px;
+    margin: 20px auto;
+  }
 
-    .results {
-        font-size: 20px;
-        letter-spacing: 2px;
-    }
+  .results {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
 
-    .reset-button {
-        padding: 12px 60px;
-    }
-        .reset-button:hover {
-            background-color: rgb(51, 19, 154);
-            color: white;
-            border-color: 4px solid black;
-            font-size: 45px;
-        }
+  .reset-button {
+    padding: 12px 60px;
+  }
+  .reset-button:hover {
+    background-color: rgb(51, 19, 154);
+    color: white;
+    border-color: 4px solid black;
+    font-size: 45px;
+  }
 }
 .paper1 {
-    transform: rotate(20deg);
-    position: relative;
-    
+  transform: rotate(20deg);
+  position: relative;
 }
 .paper2 {
-    transform: rotate(-20deg);
-    position: relative;
-    top: 50px;
-    left: 560px;
-    z-index: 1;
+  transform: rotate(-20deg);
+  position: relative;
+  top: 50px;
+  left: 560px;
+  z-index: 1;
 }
 .paper3 {
-    transform: rotate(20deg);
-    position: relative;
-    left: 490px;
-    bottom: 60px;
-    z-index: 1;
+  transform: rotate(20deg);
+  position: relative;
+  left: 490px;
+  bottom: 60px;
+  z-index: 1;
 }
 .rock1 {
-    transform: rotate(20deg);
-    position: relative;
-    right: 160px;
-    top: 90px;
+  transform: rotate(20deg);
+  position: relative;
+  right: 160px;
+  top: 90px;
 }
 .rock2 {
-    transform: rotate(20deg);
-    position: relative;
-    right: -300px;
-    top: 50px;
+  transform: rotate(20deg);
+  position: relative;
+  right: -300px;
+  top: 50px;
 }
 .rock3 {
-    transform: rotate(20deg);
-    position: relative;
-    right: 300px;
-    top: -30px;
-    left: -260px
+  transform: rotate(20deg);
+  position: relative;
+  right: 300px;
+  top: -30px;
+  left: -260px;
 }
 .scissors1 {
-    transform: rotate(-35deg);
-    position: relative;
-    top: -10px;
-    right: 70px;
-    z-index: 3;
+  transform: rotate(-35deg);
+  position: relative;
+  top: -10px;
+  right: 70px;
+  z-index: 3;
 }
 .scissors2 {
-    transform: rotate(120deg);
-    position: relative;
-    top: -120px;
-    right: -350px;
+  transform: rotate(120deg);
+  position: relative;
+  top: -120px;
+  right: -350px;
 }
 .scissors3 {
-    transform: rotate(60deg);
-    position: relative;
-    top: -100px;
-    right: 350px;
+  transform: rotate(60deg);
+  position: relative;
+  top: -100px;
+  right: 350px;
 }
- /*  added logo above footer  */
+/*  added logo above footer  */
 /* also made the logo stick to the page when scrolling */
 .logo {
-    position: fixed;
-    top: 580px;
-    bottom: 20px;
-    left: 20px;
-    z-index: 9999;
-    width: 250px;
-    height: auto;
-    margin: 0;
+  position: fixed;
+  top: 680px;
+  bottom: 10px;
+  left: 20px;
+  z-index: 9999;
+  width: 250px;
+  height: auto;
 }
 
 /* made a copyright tag for my future company name */
 footer {
-    position: relative;
-    bottom: 20px;
-    padding: 60px;
-    color: rgb(240, 240, 245);
-    font-size: 14px;
-    z-index: 2;
+  position: relative;
+  bottom: 20px;
+  padding: 60px;
+  color: rgb(240, 240, 245);
+  font-size: 14px;
+  z-index: 2;
 }
 /*  Mobile Styles */
 @media screen and (max-width: 600px) {
-    h1 {
-        font-size: 28px;
-    }
+  h1 {
+    font-size: 28px;
+  }
 
-    .button1, .button2, .button3 {
-        width: 180px;
-    }
+  .button1,
+  .button2,
+  .button3 {
+    width: 180px;
+  }
 
-    .result-container {
-        width: 240px;
-        height: 140px;
-    }
+  .result-container {
+    width: 240px;
+    height: 140px;
+  }
 
-    .results {
-        font-size: 18px;
-        letter-spacing: 1px;
-    }
+  .results {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
 }
 
 /* device responsive adjustments for fixed logo */
 @media screen and (max-width: 670px) {
-    .logo {
-        width: 180px;
-        bottom: 14px;
-        left: 12px;
-    }
+  .logo {
+    width: 180px;
+    bottom: 14px;
+    left: 12px;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .logo {
-        width: 140px;
-        bottom: 10px;
-        left: 8px;
-    }
+  .logo {
+    width: 140px;
+    bottom: 10px;
+    left: 8px;
+  }
 }

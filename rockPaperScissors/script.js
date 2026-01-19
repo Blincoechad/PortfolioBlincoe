@@ -55,8 +55,6 @@ resetBtn.addEventListener('click', resetGame);
 
 // resets to original letters
 function resetGame() {
-  resultDisplay.textContent = originalResultHTML;
-  resultDisplay.removeAttribute('style');
   document.getElementById('result').innerHTML = originalResultHTML;
 }
 
