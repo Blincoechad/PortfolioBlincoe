@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <!--icons for langauages-->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+        <link rel="apple-touch-icon" sizes="180x180"
+            href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16"
+            href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+
+        <!-- the inter font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+            rel="stylesheet">
+
+        <title>Chads Portfolio</title>
+    </head>
+    <body>
+        <!-- // navbar hamburger button for mobile -->
+        <nav class="navBar">
+            <img src="media/myLogo.png" alt="ChadBlincoeLogo"
+                class="nav-logo">
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="frontend-logic.html">Front-End Logic</a></li>
+                <li><a href="websites.html">Website Rebuild</a></li>
+                <li><a href="graphic-work.html">Graphic Work</a></li>
+                <li><a href="contact-me.html">Contact Me</a></li>
+
+            </ul>
+
+        </nav>
+        <section id="home">
+            <div class="container-stack">
+                <div class="box1" id="box1">
+                    <div class="text-left">
+                        <h1 class="chadBlincoe">Chad Blincoe</h1>
+                        <h2 class="WhatIDo"><span
+                                class="webDesigner-text subtitle">Web
+                                Designer/Specialist - UX/UI Design</span> <br>
+                        </h2>
+                        <p>
+                            <span class="webDesigner-text">Front-End
+                                Logic, <br>
+                                Responsive Layouts,<br>
+                                Modern Redesigns
+                            </span>
+                        </p>
+                        <div class="lang-icons">
+
+                            <i class="devicon-html5-plain colored"></i>
+                            <i class="devicon-css3-plain colored"></i>
+                            <i class="devicon-javascript-plain colored"></i>
+                        </div>
+
+                        <!-- button that uses JS to connect to contact page onClick -->
+                        <div class="glow-wrap">
+                            <button class="glow-btn"
+                                onclick="window.location.href='contact-me.html'">
+                                Contact Me
+                            </button>
+                        </div>
+                    </div>
+                    <img class="myImg" src="media/ProSelfieFaded.png"
+                        alt="PictureOfChadBlincoe"
+                        class="chad-image">
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="cards-title">Click The Tabs to see My Work!</h2>
+            <div class="box2" id="MyCertification">
+
+                <div class="box2-content">
+                    <div class="box2-grid">
+                        <!-- add pages for these href links on cards -->
+                        <a class="card-link" href="frontend-logic.html"
+                            aria-label="Front-End Logic — open project page">
+                            <div class="box2-card text">
+                                <div class="box2-card-content">
+                                    <h3 class="categories">Front-End Logic</h3>
+                                    <video autoplay muted loop playsinline
+                                        class="card1-video">
+                                        <source src="media/iphoneMenu.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                    <p class="text"> Projects that focus on
+                                        Javascript driven
+                                        behavior like Buttons,
+                                        Form Handling, DOM Updates, and simple
+                                        interactive features
+                                        that make a boring layout feel
+                                        alive!</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card-link" href="websites.html"
+                            aria-label="Redesign of Websites — open project page">
+                            <!-- add pages for these href links on cards -->
+                            <div class="box2-card text">
+                                <div class="box2-card-content">
+                                    <h3 class="categories">Redesign of
+                                        Website</h3>
+                                    <div class="card-image-hover">
+                                        <img src="media/beforeSite.png"
+                                            alt="Before redesign"
+                                            class="img-base">
+                                        <img src="media/afterSite.png"
+                                            alt="After redesign"
+                                            class="img-hover">
+                                    </div>
+
+                                    <p class="text">
+                                        Redesigned and rebuilt websites with
+                                        improved layout,
+                                        Responsiveness, and Front-end code
+                                        quality—focused on clarity,
+                                        usability, and modern design practices.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card-link" href="graphic-work.html"
+                            aria-label="Graphic Work — open project page">
+                            <!-- add pages for these href links on cards -->
+                            <div class="box2-card text">
+                                <div class="box2-card-content">
+                                    <h3 class="categories">Graphic Work</h3>
+                                    <img class="box2-card-image"
+                                        src="media/BackgroundChangeGlass.png"
+                                        alt="Degree">
+                                    <p class="text">
+                                        Media editing projects using Photoshop
+                                        and Premiere Pro,
+                                        focused on clean visuals, consistent
+                                        presentation,
+                                        and polished final output.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <footer id="contact">
+            <p class="footer-text">© 2025 Chad Blincoe. All rights
+                reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
