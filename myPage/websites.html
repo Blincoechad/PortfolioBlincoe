@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Redesigns</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <nav class="navBar">
+            <img src="media/myLogo.png" alt="ChadBlincoeLogo"
+                class="nav-logo">
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="frontend-logic.html">Front-End Logic</a></li>
+                <li><a href="graphic-work.html">Graphic Work</a></li>
+                <li><a href="websites.html">Website Rebuild</a></li>
+                <li><a href="contact-me.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="grid-container">
+            <h1 class="website-title">Website Redesign</h1>
+            <p class="page-intro">
+                Before-and-after website redesign exploring
+                modern UI and front-end best practices.
+            </p>
+
+            <!-- Website -->         
+            <section class="redesign-row">
+                <div class="media clickable-image">
+                    <img src="media/beforeSite.png"
+                        width="350" height="300"
+                        alt="Before Redesign Screenshot" />
+                </div>
+
+                <div class="description">
+                    <h2 class="project-titles">Legacy Website - Orignal Design</h2>
+                    <p class="text website-text">
+                        This preview shows the original landing page prior to
+                        redesign.
+                        The site relied on an outdated visual style,
+                        inconsistent spacing,
+                        and limited responsiveness, which reduced clarity and
+                        usability.
+                        The goal of this project was to modernize the design
+                        system, improve
+                        layout structure, and bring the site up to current web
+                        standards.
+                    </p>
+                    <a href="https://www.pnwx.com" target="_blank"
+                        class="live-link">
+                        Click to View Live Site →
+                    </a>
+                </div>
+
+            </section>
+
+            <!-- Rebuilt Site -->
+            <section class="redesign-row reverse">
+                <div class="description">
+                    <h2 class="project-titles">Modern Website Redesign & Build</h2>
+
+                    <a href="https://blincoechad.github.io/SiteRebuild/"
+                        target="_blank"
+                        class="live-link" alt="afterBuildVideo">
+                        Click to View Live Site →
+                    </a>
+                    <p class="text website-text">
+                        This clip shows the fully redesigned and rebuilt
+                        website, coded
+                        from scratch. The update features a modernized layout,
+                        improved
+                        typography, responsive design, and a redesigned logo to
+                        better
+                        reflect the brand. The result is a cleaner, more
+                        professional
+                        interface with stronger visual hierarchy, improved user
+                        experience,
+                        and performance-ready front-end code.
+                    </p>
+                </div>
+
+                <div class="rebuild-clip">
+                    <video class="rebuildVideo" src="media/SiteRebuild.mp4"
+                        controls></video>
+
+                </div>
+            </section>
+        </main>
+        <div id="overlay">
+            <span id="close">&times;</span>
+            <img id="overlay-img" alt="Expanded view" />
+        </div>
+        <p><a class="link" href="index.html">← Back to Home</a></p>
+        <footer id="contact">
+            <p class="footer-text">© 2025 Chad Blincoe. All rights reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
